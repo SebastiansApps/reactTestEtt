@@ -1,9 +1,34 @@
+/// <reference types="jest"/>
 import React from 'react';
-import App from './index';
+import { shallow } from 'enzyme';
 
-import renderer from 'react-test-renderer';
+import Main from './';
 
-it('renders without crashing', () => {
-  const rendered = renderer.create(<App />).toJSON();
-  expect(rendered).toBeTruthy();
+function setup() {
+  const props = {
+// Här kan ni mocka komponentens props om sådana finns
+// typ userName: 'test'
+  };
+
+  const enzymeWrapper = shallow(<Main {...props} /> );
+
+  return {
+    props,
+    enzymeWrapper,
+  };
+}
+
+describe('components', () => {
+  /**
+   * Test component rendering. Properties of children might be tested by importing their type:
+   *   import { Text } from 'react-native';
+   *    const busyProps = enzymeWrapper.find(Text).props();
+   *    expect(busyProps.text).toBe('test);
+   */
+  describe('Main', () => {
+    it('should render self and subcomponents', () => {
+      const { enzymeWrapper } = setup();
+      expect(enzymeWrapper).toMatchSnapshot();
+    });
+  });
 });
