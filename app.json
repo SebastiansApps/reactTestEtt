@@ -1,0 +1,8 @@
+{
+  "expo": {
+    "sdkVersion": "25.0.0",
+    "primaryColor": "#fff",
+    "icon": "./img/txt-icon.png",
+    "name": "CoolApp"
+  }
+}
