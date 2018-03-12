@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
-import { View, Button, Text, TextInput, Alert } from 'react-native';
-import Main from './dist/components/Main';
-import Navigator from './dist/components/Navigator'
+import AppContainter from './dist/App'
 
 const App = () => {
-  return (<Navigator />);
+  return (<AppContainer />);
 }
 
 export default App

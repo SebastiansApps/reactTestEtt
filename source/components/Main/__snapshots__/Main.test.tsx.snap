@@ -1,0 +1,221 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components Main should render self and subcomponents 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <App />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "children": Array [
+        <UNDEFINED
+          onChangeText={[Function]}
+          placeholder="Type here pleass"
+          style={
+            Object {
+              "borderColor": "gray",
+              "borderWidth": 1,
+              "fontSize": 14,
+              "padding": 40,
+            }
+          }
+        />,
+        <UNDEFINED
+          style={
+            Object {
+              "fontSize": 14,
+              "padding": 30,
+            }
+          }
+        >
+          Welcome 
+        </UNDEFINED>,
+        <UNDEFINED
+          onPress={[Function]}
+          title="Next"
+        />,
+        <Progress
+          amount={0}
+        />,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "onChangeText": [Function],
+          "placeholder": "Type here pleass",
+          "style": Object {
+            "borderColor": "gray",
+            "borderWidth": 1,
+            "fontSize": 14,
+            "padding": 40,
+          },
+        },
+        "ref": null,
+        "rendered": null,
+        "type": undefined,
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "children": "Welcome ",
+          "style": Object {
+            "fontSize": 14,
+            "padding": 30,
+          },
+        },
+        "ref": null,
+        "rendered": "Welcome ",
+        "type": undefined,
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "onPress": [Function],
+          "title": "Next",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": undefined,
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "amount": 0,
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
+    "type": undefined,
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": Array [
+          <UNDEFINED
+            onChangeText={[Function]}
+            placeholder="Type here pleass"
+            style={
+              Object {
+                "borderColor": "gray",
+                "borderWidth": 1,
+                "fontSize": 14,
+                "padding": 40,
+              }
+            }
+          />,
+          <UNDEFINED
+            style={
+              Object {
+                "fontSize": 14,
+                "padding": 30,
+              }
+            }
+          >
+            Welcome 
+          </UNDEFINED>,
+          <UNDEFINED
+            onPress={[Function]}
+            title="Next"
+          />,
+          <Progress
+            amount={0}
+          />,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "onChangeText": [Function],
+            "placeholder": "Type here pleass",
+            "style": Object {
+              "borderColor": "gray",
+              "borderWidth": 1,
+              "fontSize": 14,
+              "padding": 40,
+            },
+          },
+          "ref": null,
+          "rendered": null,
+          "type": undefined,
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "children": "Welcome ",
+            "style": Object {
+              "fontSize": 14,
+              "padding": 30,
+            },
+          },
+          "ref": null,
+          "rendered": "Welcome ",
+          "type": undefined,
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "onPress": [Function],
+            "title": "Next",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": undefined,
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "amount": 0,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": undefined,
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;

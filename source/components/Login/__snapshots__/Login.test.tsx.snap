@@ -1,0 +1,191 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components Main should render self and subcomponents 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Main />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "children": Array [
+        <UNDEFINED>
+          Login
+        </UNDEFINED>,
+        <UNDEFINED
+          autoFocus={true}
+          keyboardType="email-address"
+          placeholder="Username"
+          style={
+            Object {
+              "width": 200,
+            }
+          }
+        />,
+        <UNDEFINED
+          onChangeText={[Function]}
+          placeholder="Passsword"
+          secureTextEntry={true}
+          style={
+            Object {
+              "width": 200,
+            }
+          }
+        />,
+      ],
+      "style": Object {
+        "flex": 1,
+        "padding": 20,
+      },
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "children": "Login",
+        },
+        "ref": null,
+        "rendered": "Login",
+        "type": undefined,
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "autoFocus": true,
+          "keyboardType": "email-address",
+          "placeholder": "Username",
+          "style": Object {
+            "width": 200,
+          },
+        },
+        "ref": null,
+        "rendered": null,
+        "type": undefined,
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "onChangeText": [Function],
+          "placeholder": "Passsword",
+          "secureTextEntry": true,
+          "style": Object {
+            "width": 200,
+          },
+        },
+        "ref": null,
+        "rendered": null,
+        "type": undefined,
+      },
+    ],
+    "type": undefined,
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": Array [
+          <UNDEFINED>
+            Login
+          </UNDEFINED>,
+          <UNDEFINED
+            autoFocus={true}
+            keyboardType="email-address"
+            placeholder="Username"
+            style={
+              Object {
+                "width": 200,
+              }
+            }
+          />,
+          <UNDEFINED
+            onChangeText={[Function]}
+            placeholder="Passsword"
+            secureTextEntry={true}
+            style={
+              Object {
+                "width": 200,
+              }
+            }
+          />,
+        ],
+        "style": Object {
+          "flex": 1,
+          "padding": 20,
+        },
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "children": "Login",
+          },
+          "ref": null,
+          "rendered": "Login",
+          "type": undefined,
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "autoFocus": true,
+            "keyboardType": "email-address",
+            "placeholder": "Username",
+            "style": Object {
+              "width": 200,
+            },
+          },
+          "ref": null,
+          "rendered": null,
+          "type": undefined,
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "onChangeText": [Function],
+            "placeholder": "Passsword",
+            "secureTextEntry": true,
+            "style": Object {
+              "width": 200,
+            },
+          },
+          "ref": null,
+          "rendered": null,
+          "type": undefined,
+        },
+      ],
+      "type": undefined,
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;

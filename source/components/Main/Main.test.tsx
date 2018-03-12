@@ -1,6 +1,9 @@
 /// <reference types="jest"/>
 import React from 'react';
 import { shallow } from 'enzyme';
+import Progress from '../Progress';
+// import Login from '../Login';
+// import TextInput till react
 
 import Main from './';
 
@@ -19,16 +22,17 @@ function setup() {
 }
 
 describe('components', () => {
-  /**
-   * Test component rendering. Properties of children might be tested by importing their type:
-   *   import { Text } from 'react-native';
-   *    const busyProps = enzymeWrapper.find(Text).props();
-   *    expect(busyProps.text).toBe('test);
-   */
+
   describe('Main', () => {
     it('should render self and subcomponents', () => {
       const { enzymeWrapper } = setup();
       expect(enzymeWrapper).toMatchSnapshot();
+
+      const progress = enzymeWrapper.find(Progress).props();
+      expect(progress.amount).toBe(0);
+
+      const login = enzymeWrapper.find(textInput).at(1).props;
+      expect();
     });
   });
 });
