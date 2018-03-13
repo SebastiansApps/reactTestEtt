@@ -1,4 +1,4 @@
-import * as login from '../types';
+import * as login from '../Types';
 
 const initialState: login.ILoginState = {
     user: null,

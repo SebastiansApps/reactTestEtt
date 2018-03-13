@@ -3,7 +3,7 @@ import { Provider} from 'react-redux';
 import { PersistGate } from 'redux-persist/integration/react';
 
 import Store, { configurePersistStore } from './Store';
-import AppNavigator from './components/Navigator';
+import AppNavigator from './Components/Navigator/';
 
 const persistor = configurePersistStore;
 

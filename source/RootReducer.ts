@@ -3,7 +3,7 @@ import { IApplicationState } from './Types';
 import { combineReducers } from 'redux';
 import storage from 'redux-persist/es/storage';
 import { persistReducer } from 'redux-persist';
-import LoginReducer from './components/Login/Reducers/index';
+import LoginReducer from './Components/Login/Reducers';
 
 const PersistLoginReducer = persistReducer({ key: 'login', storage }, LoginReducer);
 

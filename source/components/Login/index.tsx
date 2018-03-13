@@ -1,8 +1,12 @@
 import React from 'react';
 import { View, Text, TextInput } from 'react-native';
 import { Actions } from 'react-native-router-flux';
+import { connect, Dispatch } from 'react-redux';
+import { bindActionCreators }from 'redux';
 
-class Main extends React.Component<{}, {}> {
+import * as types from '../../Types';
+import { FacebookLogin } from './Actions';
+export class Login extends React.Component<types.IProps, {}> {
 
     render() {
         return (
@@ -30,4 +34,16 @@ class Main extends React.Component<{}, {}> {
     userName: string = 'unknown';
 }
 
-export default Main;
+const mapStateToProps = (state: types.IApplicationState) => ({
+    // route: state.route,
+    login: state.login,
+  });
+
+  const mapDispatchToProps = (dispatch: Dispatch<types.IProps>) => ({
+    dispatch, FacebookLogin: bindActionCreators(FacebookLogin, dispatch),
+  });
+
+  export default connect<types.IApplicationState, types.IProps>(
+    mapStateToProps,
+    mapDispatchToProps
+  )(Login);

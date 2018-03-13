@@ -1,7 +1,10 @@
 import React from 'react';
 import { View, Text, TextInput } from 'react-native';
 import { Actions } from 'react-native-router-flux';
-class Main extends React.Component {
+import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
+import { FacebookLogin } from './Actions';
+export class Login extends React.Component {
     constructor() {
         super(...arguments);
         this.onTextChanged = (text) => {
@@ -20,4 +23,10 @@ class Main extends React.Component {
             </View>);
     }
 }
-export default Main;
+const mapStateToProps = (state) => ({
+    login: state.login,
+});
+const mapDispatchToProps = (dispatch) => ({
+    dispatch, FacebookLogin: bindActionCreators(FacebookLogin, dispatch),
+});
+export default connect(mapStateToProps, mapDispatchToProps)(Login);

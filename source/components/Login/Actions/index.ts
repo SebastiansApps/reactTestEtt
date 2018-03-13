@@ -1,4 +1,4 @@
-import * as types from '../types';
+import * as types from '../Types';
 import * as Redux from 'redux';
 import { Constants, Facebook } from 'expo';
 

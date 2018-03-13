@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import AppContainter from './dist/AppContainer'
+import AppContainer from './dist/AppContainer'
 
 const App = () => {
   return (<AppContainer />);
