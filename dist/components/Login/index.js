@@ -16,7 +16,7 @@ class Main extends React.Component {
         return (<View style={{ padding: 20, flex: 1 }}>
                 <Text>Login</Text>
                 <TextInput style={{ width: 200 }} placeholder='Username' autoFocus keyboardType='email-address'/>
-                <TextInput style={{ width: 200 }} placeholder='Passsword' secureTextEntry onChangeText={(name) => this.onTextChanged(name)}/>
+                <TextInput style={{ width: 200 }} placeholder='Password' secureTextEntry onChangeText={(name) => this.onTextChanged(name)}/>
             </View>);
     }
 }

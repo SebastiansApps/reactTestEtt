@@ -2,8 +2,10 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 // import TextInput till react
+import { TextInput } from 'react-native';
+import Login from '../Login';
 
-import Login from './';
+jest.unmock('react-native');
 
 function setup() {
   const props = {
@@ -26,11 +28,8 @@ describe('components', () => {
       const { enzymeWrapper } = setup();
       expect(enzymeWrapper).toMatchSnapshot();
 
-      const progress = enzymeWrapper.find(Progress).props();
-      expect(progress.amount).toBe(0);
-
-      const login = enzymeWrapper.find(textInput).at(1).props;
-      expect();
+      const login = enzymeWrapper.find(TextInput).at(1).props;
+      expect(login.placeholder).toBe('Password');
     });
   });
 });

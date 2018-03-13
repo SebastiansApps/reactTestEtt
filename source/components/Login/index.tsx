@@ -15,7 +15,7 @@ class Main extends React.Component<{}, {}> {
                     keyboardType='email-address' />
                 <TextInput
                     style={{width: 200}}
-                    placeholder='Passsword'
+                    placeholder='Password'
                     secureTextEntry
                     onChangeText={(name) => this.onTextChanged(name)} />
             </View>

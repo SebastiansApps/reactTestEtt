@@ -2,9 +2,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import Progress from '../Progress';
-// import Login from '../Login';
-// import TextInput till react
-
 import Main from './';
 
 function setup() {
@@ -31,8 +28,6 @@ describe('components', () => {
       const progress = enzymeWrapper.find(Progress).props();
       expect(progress.amount).toBe(0);
 
-      const login = enzymeWrapper.find(textInput).at(1).props;
-      expect();
     });
   });
 });

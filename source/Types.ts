@@ -1,3 +1,5 @@
+import * as login from './Components/Login/Types';
+
 /**
  *
  *
@@ -5,7 +7,7 @@
  * @interface IApplicationState
  */
 export interface IApplicationState {
-
+    login?: login.ILoginState;
 }
 
 /**
@@ -16,5 +18,6 @@ export interface IApplicationState {
  * @extends {IApplicationState}
  */
 export interface IProps extends IApplicationState {
-
+    dispatch?: any;
+    FacebookLogin?: login.FacebookLogin;
 }

@@ -15,13 +15,18 @@ ShallowWrapper {
   Symbol(enzyme.__node__): Object {
     "instance": null,
     "key": undefined,
-    "nodeType": "function",
+    "nodeType": "class",
     "props": Object {
       "children": Array [
-        <UNDEFINED>
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+        >
           Login
-        </UNDEFINED>,
-        <UNDEFINED
+        </Text>,
+        <TextInput
+          allowFontScaling={true}
           autoFocus={true}
           keyboardType="email-address"
           placeholder="Username"
@@ -31,9 +36,10 @@ ShallowWrapper {
             }
           }
         />,
-        <UNDEFINED
+        <TextInput
+          allowFontScaling={true}
           onChangeText={[Function]}
-          placeholder="Passsword"
+          placeholder="Password"
           secureTextEntry={true}
           style={
             Object {
@@ -52,19 +58,23 @@ ShallowWrapper {
       Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "function",
+        "nodeType": "class",
         "props": Object {
+          "accessible": true,
+          "allowFontScaling": true,
           "children": "Login",
+          "ellipsizeMode": "tail",
         },
         "ref": null,
         "rendered": "Login",
-        "type": undefined,
+        "type": [Function],
       },
       Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "function",
+        "nodeType": "class",
         "props": Object {
+          "allowFontScaling": true,
           "autoFocus": true,
           "keyboardType": "email-address",
           "placeholder": "Username",
@@ -74,15 +84,16 @@ ShallowWrapper {
         },
         "ref": null,
         "rendered": null,
-        "type": undefined,
+        "type": [Function],
       },
       Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "function",
+        "nodeType": "class",
         "props": Object {
+          "allowFontScaling": true,
           "onChangeText": [Function],
-          "placeholder": "Passsword",
+          "placeholder": "Password",
           "secureTextEntry": true,
           "style": Object {
             "width": 200,
@@ -90,22 +101,27 @@ ShallowWrapper {
         },
         "ref": null,
         "rendered": null,
-        "type": undefined,
+        "type": [Function],
       },
     ],
-    "type": undefined,
+    "type": [Function],
   },
   Symbol(enzyme.__nodes__): Array [
     Object {
       "instance": null,
       "key": undefined,
-      "nodeType": "function",
+      "nodeType": "class",
       "props": Object {
         "children": Array [
-          <UNDEFINED>
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+          >
             Login
-          </UNDEFINED>,
-          <UNDEFINED
+          </Text>,
+          <TextInput
+            allowFontScaling={true}
             autoFocus={true}
             keyboardType="email-address"
             placeholder="Username"
@@ -115,9 +131,10 @@ ShallowWrapper {
               }
             }
           />,
-          <UNDEFINED
+          <TextInput
+            allowFontScaling={true}
             onChangeText={[Function]}
-            placeholder="Passsword"
+            placeholder="Password"
             secureTextEntry={true}
             style={
               Object {
@@ -136,19 +153,23 @@ ShallowWrapper {
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "function",
+          "nodeType": "class",
           "props": Object {
+            "accessible": true,
+            "allowFontScaling": true,
             "children": "Login",
+            "ellipsizeMode": "tail",
           },
           "ref": null,
           "rendered": "Login",
-          "type": undefined,
+          "type": [Function],
         },
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "function",
+          "nodeType": "class",
           "props": Object {
+            "allowFontScaling": true,
             "autoFocus": true,
             "keyboardType": "email-address",
             "placeholder": "Username",
@@ -158,15 +179,16 @@ ShallowWrapper {
           },
           "ref": null,
           "rendered": null,
-          "type": undefined,
+          "type": [Function],
         },
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "function",
+          "nodeType": "class",
           "props": Object {
+            "allowFontScaling": true,
             "onChangeText": [Function],
-            "placeholder": "Passsword",
+            "placeholder": "Password",
             "secureTextEntry": true,
             "style": Object {
               "width": 200,
@@ -174,10 +196,10 @@ ShallowWrapper {
           },
           "ref": null,
           "rendered": null,
-          "type": undefined,
+          "type": [Function],
         },
       ],
-      "type": undefined,
+      "type": [Function],
     },
   ],
   Symbol(enzyme.__options__): Object {
