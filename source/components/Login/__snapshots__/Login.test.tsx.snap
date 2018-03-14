@@ -25,32 +25,17 @@ ShallowWrapper {
         >
           Login
         </Text>,
-        <TextInput
-          allowFontScaling={true}
-          autoFocus={true}
-          keyboardType="email-address"
-          placeholder="Username"
-          style={
-            Object {
-              "width": 200,
-            }
-          }
-        />,
-        <TextInput
-          allowFontScaling={true}
-          onChangeText={[Function]}
-          placeholder="Password"
-          secureTextEntry={true}
-          style={
-            Object {
-              "width": 200,
-            }
-          }
+        <UNDEFINED
+          button={true}
+          onPress={[Function]}
+          title="Sign in with Facebook"
+          type="facebook"
         />,
       ],
       "style": Object {
+        "backgroundColor": "white",
         "flex": 1,
-        "padding": 20,
+        "padding": 50,
       },
     },
     "ref": null,
@@ -72,36 +57,16 @@ ShallowWrapper {
       Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "class",
+        "nodeType": "function",
         "props": Object {
-          "allowFontScaling": true,
-          "autoFocus": true,
-          "keyboardType": "email-address",
-          "placeholder": "Username",
-          "style": Object {
-            "width": 200,
-          },
+          "button": true,
+          "onPress": [Function],
+          "title": "Sign in with Facebook",
+          "type": "facebook",
         },
         "ref": null,
         "rendered": null,
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "allowFontScaling": true,
-          "onChangeText": [Function],
-          "placeholder": "Password",
-          "secureTextEntry": true,
-          "style": Object {
-            "width": 200,
-          },
-        },
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
+        "type": undefined,
       },
     ],
     "type": [Function],
@@ -120,32 +85,17 @@ ShallowWrapper {
           >
             Login
           </Text>,
-          <TextInput
-            allowFontScaling={true}
-            autoFocus={true}
-            keyboardType="email-address"
-            placeholder="Username"
-            style={
-              Object {
-                "width": 200,
-              }
-            }
-          />,
-          <TextInput
-            allowFontScaling={true}
-            onChangeText={[Function]}
-            placeholder="Password"
-            secureTextEntry={true}
-            style={
-              Object {
-                "width": 200,
-              }
-            }
+          <UNDEFINED
+            button={true}
+            onPress={[Function]}
+            title="Sign in with Facebook"
+            type="facebook"
           />,
         ],
         "style": Object {
+          "backgroundColor": "white",
           "flex": 1,
-          "padding": 20,
+          "padding": 50,
         },
       },
       "ref": null,
@@ -167,36 +117,16 @@ ShallowWrapper {
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "class",
+          "nodeType": "function",
           "props": Object {
-            "allowFontScaling": true,
-            "autoFocus": true,
-            "keyboardType": "email-address",
-            "placeholder": "Username",
-            "style": Object {
-              "width": 200,
-            },
+            "button": true,
+            "onPress": [Function],
+            "title": "Sign in with Facebook",
+            "type": "facebook",
           },
           "ref": null,
           "rendered": null,
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "allowFontScaling": true,
-            "onChangeText": [Function],
-            "placeholder": "Password",
-            "secureTextEntry": true,
-            "style": Object {
-              "width": 200,
-            },
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
+          "type": undefined,
         },
       ],
       "type": [Function],

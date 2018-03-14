@@ -3,7 +3,7 @@ import { Platform } from 'react-native';
 import { Scene, Router, Modal, Tabs } from 'react-native-router-flux';
 import { FontAwesome } from '@expo/vector-icons';
 import Main from '../Main';
-import Login from '../Login';
+import { Login } from '../Login';
 const mainIcon = () => (<FontAwesome name='map-o' size={12} style={{ color: 'white' }}/>);
 const prefix = Platform.OS === 'android' ? 'myApp://myapp/' : 'myapp://';
 const AppNavigator = () => {

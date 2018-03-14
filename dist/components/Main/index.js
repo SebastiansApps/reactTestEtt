@@ -2,7 +2,10 @@ import React, { Component } from 'react';
 import { View, Button, Text, TextInput, Alert } from 'react-native';
 import Progress from '../Progress';
 import { Actions } from 'react-native-router-flux';
-export default class App extends Component {
+import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
+import { FacebookLogin } from '../Login/Actions';
+export class App extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -18,7 +21,9 @@ export default class App extends Component {
         });
     }
     componentDidMount() {
-        Actions.push('login');
+        if (!this.props.login.isLoggedIn) {
+            Actions.push('Login');
+        }
     }
     render() {
         return (<View>
@@ -34,3 +39,10 @@ export default class App extends Component {
       </View>);
     }
 }
+const mapStateToProps = (state) => ({
+    login: state.login,
+});
+const mapDispatchToProps = (dispatch) => ({
+    dispatch, FacebookLogin: bindActionCreators(FacebookLogin, dispatch),
+});
+export default connect(mapStateToProps, mapDispatchToProps)(App);

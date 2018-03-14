@@ -2,6 +2,10 @@ import React, { Component } from 'react';
 import { View, Button, Text, TextInput, Alert } from 'react-native';
 import Progress from '../Progress';
 import { Actions } from 'react-native-router-flux';
+import * as types from '../../Types';
+import { connect, Dispatch } from 'react-redux';
+import { bindActionCreators }from 'redux';
+import { FacebookLogin } from '../Login/Actions';
 
 interface IState {
     isLoaded: boolean;
@@ -9,7 +13,7 @@ interface IState {
     amountClicks: number;
 }
 
-export default class App extends Component <{}, IState> {
+export class App extends Component <types.IProps, IState> {
 // PROPS, FUNC:
 
 constructor(props: any) {
@@ -29,7 +33,9 @@ onTextChanged(newName: string) {
 }
 
 componentDidMount() {
-  Actions.push('login');
+  if (!this.props.login.isLoggedIn) {
+    Actions.push('Login');
+  }
 }
 
   render() {
@@ -56,3 +62,17 @@ componentDidMount() {
     );
   }
 }
+
+const mapStateToProps = (state: types.IApplicationState) => ({
+  // route: state.route,
+  login: state.login,
+});
+
+const mapDispatchToProps = (dispatch: Dispatch<types.IProps>) => ({
+  dispatch, FacebookLogin: bindActionCreators(FacebookLogin, dispatch),
+});
+
+export default connect<types.IApplicationState, types.IProps>(
+  mapStateToProps,
+  mapDispatchToProps
+)(App);
